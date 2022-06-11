@@ -12,9 +12,9 @@ html {
 }
 
 #inicio {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("img/fondo-inicio.jpg");
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("/es.github.io/assets/img/bg-sky-night-star.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     height: 100vh;
 }
 
@@ -49,7 +49,7 @@ html {
 #inicio .contenido header .contenido-header nav ul li a {
     text-decoration: none;
     color: #fff;
-    margin: 0.12px;
+    margin: 0 12px;
     font-weight: 400;
     transition: .5s;
 }
@@ -58,11 +58,23 @@ html {
     color: red;
 }
 
+#inicio .contenido header .contenido-header .redes a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+    transition: .5s;
+}
+
+#inicio .contenido header .contenido-header .redes a:hover {
+    color: red;
+}
+
 #inicio .contenido .presentacion {
     max-width: 1100px;
     height: 100vh;
     margin: auto;
-    columns: #fff;
+    color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,4 +86,43 @@ html {
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 5px;
+}
+
+#inicio .contenido .presentacion h2 {
+    font-size: 55px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#inicio .contenido .presentacion h2 span {
+    font-size: 45px;
+    color: red;
+}
+
+#incio .contenido .presentacion .descripcion {
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 18px;
+    text-align: center;
+}
+
+#inicio .contenido .presentacion a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+#inicio .contenido .presentacion a:hover {
+    background-color: red;
+}
+
+#icono-nav {
+    color: #fff;
+    display: none;
 }
