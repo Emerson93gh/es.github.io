@@ -1,199 +1,227 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>My Portfolio</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Simple line icons-->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
-        <nav id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand"><a href="#page-top">Start Bootstrap</a></li>
-                <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
-                <li class="sidebar-nav-item"><a href="#about">About</a></li>
-                <li class="sidebar-nav-item"><a href="#services">Services</a></li>
-                <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
-                <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <!-- Header-->
-        <header class="masthead d-flex align-items-center">
-            <div class="container px-4 px-lg-5 text-center">
-                <h1 class="mb-1 text-white">Hi, I'm Emerson Solano</h1>
-                <h3 class="mb-5 text-white"><em>A Software Developer Trainee. </em></h3>
-                <a class="btn btn-primary btn-xl" href="https://www.linkedin.com/in/emerson-s-24786247">Find Out More</a>
-            </div>
-        </header>
-        <!-- About-->
-        <section class="content-section bg-light" id="about">
-            <div class="container px-4 px-lg-5 text-center">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-10">
-                        <h2>Web project code</h2>
-                        <ul>Use:
-                            <li>Start Bootstrap</li>
-                            <li>HTML5</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>Git</li>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>ES Desarrollo Web</title>
+</head>
+<body>
+    <!-- Seccion inicio -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>|ES|</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <!-- <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li> -->
+                            <li><a href="#skills" onclick="seleccionar(this)">CÓDIGO</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <!-- <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li> -->
                         </ul>
-                        <!--<p class="lead mb-5"></p> -->
-                        <a class="btn btn-dark btn-xl" href="https://github.com/Emerson93gh/es.github.io">See project</a>
+                    </nav>
+
+                    <!-- Iconos de menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!-- Iconos de redes sociales -->
+                    <div class="redes">
+                        <a href="https://www.linkedin.com/in/emerson-s-24786247" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Emerson93gh" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <!-- <a href="#"><i class="fa-brands fa-twitter"></i></a> -->
                     </div>
                 </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos/as</p>
+                <h2>Soy <span>Emerson Solano</span></h2>
+                <p class="descripcion">Un apasionado de las tecnologías de desarrollo de software, tanto en Frontend como en Backend. Actualmente me estoy capacitando para adquirir más conocimientos que me permitan crear una carrera como Ingeniero de Software / Full Stack Developer.</p>
+                <a href="#portfolio">Ir a portafolio</a>
             </div>
-        </section>
-        <!-- Services--> <!--
-        <section class="content-section bg-primary text-white text-center" id="services">
-            <div class="container px-4 px-lg-5">
-                <div class="content-section-heading">
-                    <h3 class="text-secondary mb-0">Services</h3>
-                    <h2 class="mb-5">What We Offer</h2>
-                </div>
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-screen-smartphone"></i></span>
-                        <h4><strong>Responsive</strong></h4>
-                        <p class="text-faded mb-0">Looks great on any screen size!</p>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-pencil"></i></span>
-                        <h4><strong>Redesigned</strong></h4>
-                        <p class="text-faded mb-0">Freshly redesigned for Bootstrap 5.</p>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-like"></i></span>
-                        <h4><strong>Favorited</strong></h4>
-                        <p class="text-faded mb-0">
-                            Millions of users
-                            <i class="fas fa-heart"></i>
-                            Start Bootstrap!
-                        </p>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-mustache"></i></span>
-                        <h4><strong>Question</strong></h4>
-                        <p class="text-faded mb-0">I mustache you a question...</p>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!-- Callout--> <!--
-        <section class="callout">
-            <div class="container px-4 px-lg-5 text-center">
-                <h2 class="mx-auto mb-5">
-                    Welcome to
-                    <em>your</em>
-                    next website!
-                </h2>
-                <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/theme/stylish-portfolio/">Download Now!</a>
-            </div>
-        </section> -->
-        <!-- Portfolio-->
-        <section class="content-section" id="portfolio">
-            <div class="container px-4 px-lg-5">
-                <div class="content-section-heading text-center">
-                    <h3 class="text-secondary mb-0">Portfolio</h3>
-                    <h2 class="mb-5">Recent Projects</h2>
-                </div>
-                <div class="row gx-0">
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Stationary</div>
-                                    <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio-1.jpg" alt="..." />
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Ice Cream</div>
-                                    <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio-2.jpg" alt="..." />
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Strawberries</div>
-                                    <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio-3.jpg" alt="..." />
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Workspace</div>
-                                    <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio-4.jpg" alt="..." />
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Call to Action--> <!--
-        <section class="content-section bg-primary text-white">
-            <div class="container px-4 px-lg-5 text-center">
-                <h2 class="mb-4">The buttons below are impossible to resist...</h2>
-                <a class="btn btn-xl btn-light me-4" href="#!">Click Me!</a>
-                <a class="btn btn-xl btn-dark" href="#!">Look at Me!</a>
-            </div>
-        </section> -->
-        <!-- Map--> <!--
-        <div class="map" id="contact">
-            <iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-            <br />
-            <small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a></small>
-        </div> -->
-        <!-- Footer-->
-        <footer class="footer text-center">
-            <div class="container px-4 px-lg-5">
-                <ul class="list-inline mb-5">
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-facebook"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-twitter"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white" href="https://github.com/Emerson93gh"><i class="icon-social-github"></i></a>
-                    </li>
+        </div>
+    </section>
+
+    <!-- Seccion sobre mi -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="/es.github.io/assets/img/esolano-foto.jpg" alt="me">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre mi</p>
+            <h2>Hola, soy <span>Emerson Solano</span></h2>
+            <div class="contenido">
+                <h3>Ingeniero en Sistemas y Computación.</h3>
+                <p>Junior Software Developer.</p>
+                <h4>Conocimientos intermedios en </h4>
+                <ul>
+                    <li><b>Frontend:</b> HTML, CSS, JavaScript y Bootstrap</li>
+                    <li><b>Backend:</b> PHP y Java</li>
+                    <li><b>Bases de datos:</b> MySQL, PostgreSQL y MSSQL</li>
+                </ul><br>
+                <h4>Conocimientos básicos en </h4>
+                <ul>
+                    <li><b>Frontend:</b> Reack Js, Laravel y Tailwind</li>
+                    <li><b>Backend:</b> Node Js y Express</li>
+                    <li><b>Bases de datos:</b> MongoDB y Firebase</li>
+                </ul><br>
+                <h4>Conocimientos complementarios en </h4>
+                <ul>
+                    <li><b>Control de versiones:</b> Git y Github</li>
+                    <li><b>Metodologías ágiles:</b> Scrum Fundamentos</li>
                 </ul>
-                <p class="text-muted small mb-0">Copyright &copy; Your Website 2022</p>
+                <!-- <a href="#">Descargar CV</a> -->
+                <a href="https://www.linkedin.com/in/emerson-s-24786247" target="_blank">Conocer más</a>
             </div>
-        </footer>
-        <!-- Scroll to Top Button-->
-        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+        </div>
+    </section>
+
+    <!-- Seccion servicios 
+    <section id="servicios">
+    </section> -->
+
+    <!-- Seccion habilidades -->
+    <section class="contenedor-skills" id="skills">
+        <h3>Habilidades para este proyecto:</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>HTML</p>
+                <span class="porcentaje">90%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class=""></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>CSS</p>
+                <span class="porcentaje">70%</span>
+            </div>
+            <div class="barra">
+                <div id="css" class=""></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>JavaScript</p>
+                <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class=""></div>
+            </div>
+        </div>
+        <!-- <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Photoshop</p>
+                <span class="porcentaje">35%</span>
+            </div>
+            <div class="barra">
+                <div id="ps" class=""></div>
+            </div>
+        </div> -->
+        <a href="https://github.com/Emerson93gh/es.github.io" target="_blank">Ver código</a>
+    </section> 
+
+    <!-- Seccion portafolio -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">MIS PROYECTOS</h3><br>
+        <h1>PHP</h1>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="/es.github.io/assets/img/portfolio-1.jpg" alt="img1">
+                    <div class="info">
+                        <h4>PHP y PostgreSQL - En desarrollo</h4>
+                        <p>CRUD</p>
+                    </div>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="/es.github.io/assets/img/portfolio-2.jpg" alt="img1">
+                    <div class="info">
+                        <h4>Próximamente...</h4>
+                        <p>PHP</p>
+                    </div>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay">
+                    <!-- <a href="https://www.google.com.sv" target="_blank"> -->
+                    <img src="/es.github.io/assets/img/portfolio-3.jpg" alt="img1">
+                    <div class="info">
+                        <h4>Próximamente...</h4>
+                        <p>PHP</p>
+                    </div></a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="fila">
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="/es.github.io/assets/img/portfolio-4.jpg" alt="img1">
+                    <div class="info">
+                        <h4>Descripcion del proyecto</h4>
+                        <p>Diseno Web</p>
+                    </div>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="/es.github.io/assets/img/portfolio-3.jpg" alt="img1">
+                    <div class="info">
+                        <h4>Descripcion del proyecto</h4>
+                        <p>Diseno Web</p>
+                    </div>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="/es.github.io/assets/img/portfolio-2.jpg" alt="img1">
+                    <div class="info">
+                        <h4>Descripcion del proyecto</h4>
+                        <p>Diseno Web</p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </section>
+
+    <!-- SEccion de contacto -->
+    <!-- <section id="contacto">
+        <h3 class="titulo-seccion">Contactanos ahora</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre completo" class="input-mitad">
+                    <input type="text" placeholder="Direccion de Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Su mensaje..." class="input-full"></textarea>
+                </div>
+                <input type="submit" value="Enviar mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section> -->
+
+    <!-- Seccion footer -->
+    <footer>
+        <p>Todos los derechos reservados</p>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/emerson-s-24786247" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Emerson93gh" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <!-- <a href="#"><i class="fa-brands fa-twitter"></i></a> -->
+        </div>
+    </footer>
+    <script src="/es.github.io/js/script.js"></script>
+</body>
 </html>
